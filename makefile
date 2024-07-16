@@ -2,6 +2,7 @@ ASM=nasm
 SRC_DIR=src
 BUILD_DIR=build
 
+.PHONY : all floppy_image kernel bootloader  clean always
 
 $(BUILD_DIR)/main_floppy.img: $(BUILD_DIR)/main.bin
 	cp $(BUILD_DIR)/main.bin $(BUILD_DIR)/main_floppy.img
